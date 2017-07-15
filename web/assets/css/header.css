@@ -1,0 +1,13 @@
+.container{
+    width:1170px;
+}
+
+nav{
+    
+    float: right;
+    height: 50px;
+    background-color: aqua;
+    font-size: 15px;
+}
+
+
