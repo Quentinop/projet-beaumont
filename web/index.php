@@ -19,5 +19,12 @@ $app->get('/', function() use ($app)
 })
 ->bind('home');
 
+// Docs
+$app->get('/documents-utiles', function() use ($app)
+{
+	return $app['twig']->render('pages/docs.twig');
+})
+->bind('docs');
+
 // Run Silex
 $app->run();
