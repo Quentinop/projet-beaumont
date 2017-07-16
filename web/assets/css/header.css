@@ -1,8 +1,3 @@
-.container{
-    width:1170px;
-    margin:0 auto;
-}
-
 nav{
     height:60px;
     font-size:15px;
@@ -13,8 +8,7 @@ nav{
     width:30%;
     height: 100%;
     float:left;
-    text-align:right;
-    padding-top: 10px;
+    padding-top:10px;
 }
 
 .logo-header img{
@@ -28,7 +22,6 @@ nav{
 
 .menu-header ul{
     display:inline-block;
-    float:right;
 }
 
 .menu-header li{
