@@ -1,0 +1,42 @@
+.docs-title
+{
+	text-align: center;
+}
+
+.docs-cards
+{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.docs-card
+{
+	width: 400px;
+	background-color: #eee;
+	text-align: center;
+	padding: 20px 0px;
+}
+
+.docs-card:nth-child(0)
+{
+	float: left;
+}
+
+.docs-card:nth-child(1)
+{
+	float: right;
+}
+
+.docs-card-bot
+{
+	width: 90%;
+	margin: 0 auto;
+	background-color: #fefefe;
+}
+
+.docs-card-bot-line
+{
+	width: 95%;
+	margin: 0 auto;
+	border-bottom: 1px solid #eee;
+}

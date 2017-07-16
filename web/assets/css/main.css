@@ -2,3 +2,13 @@
 {
     clear: both;
 }
+
+html
+{
+	font-family: 'Helvetica';
+}
+
+strong
+{
+	font-weight: bold;
+}
