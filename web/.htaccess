@@ -1,6 +1,6 @@
 Options -MultiViews
 
 RewriteEngine On
-RewriteBase /projet-beaumont/web
+RewriteBase /beaumont/web
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^ index.php [QSA,L]
