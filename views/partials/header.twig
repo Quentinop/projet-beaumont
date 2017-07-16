@@ -5,35 +5,36 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         <title>Usine Beaumont - Migennes</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/reset.css">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/main.css">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/header.css">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/footer.css">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/home.css">
         <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/docs.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/plan.css">
     </head>
 
     <body>
 
-        <div class="container">
-            <nav>
+        <section>
+            <div class="container">
+                <nav>
 
-                <div class="logo-header">
-                    <img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png">
-                </div>
+                    <div class="logo-header">
+                        <img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png">
+                    </div>
 
-                <div class="menu-header">
-                    <ul>
-                        <li><a href="{{ url('home') }}">Accueil</a></li>
-                        <li><a href="{{ url('produits') }}">Produits</a></li>
-                        <li><a href="{{ url('plan') }}">Plan d'accès</a></li>
-                        <li><a href="{{ url('docs') }}">Documents utiles</a></li>
-                        <li><a href="{{ url('contact') }}">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="clear"></div>
-            </nav>
-
-        </div>
+                    <div class="menu-header">
+                        <ul>
+                            <li><a href="{{ url('home') }}">Accueil</a></li>
+                            <li><a href="{{ url('produits') }}">Produits</a></li>
+                            <li><a href="{{ url('plan') }}">Plan d'accès</a></li>
+                            <li><a href="{{ url('docs') }}">Documents utiles</a></li>
+                            <li><a href="{{ url('contact') }}">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </section>
