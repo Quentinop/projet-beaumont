@@ -4,20 +4,32 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
         <title>Usine Beaumont - Migennes</title>
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/header.css">
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/reset.css">
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/header.css">
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/main.css">
+        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/footer.css">
     </head>
 
     <body>
 
         <div class="container">
             <nav>
-                <a>Accueil</a>
-                <a>Produits</a>
-                <a>Plan d'accès</a>
-                <a>Documents utiles</a>
-                <a>Contact</a>
+
+                <div class="logo-header">
+                    <img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png">
+                </div>
+
+                <div class="menu-header">
+                    <ul>
+                        <li><a href="{{ url('home') }}">Accueil</a></li>
+                        <li><a href="{{ url('produits') }}">Produits</a></li>
+                        <li><a href="{{ url('plan') }}">Plan d'accès</a></li>
+                        <li><a href="{{ url('docs') }}">Documents utiles</a></li>
+                        <li><a href="{{ url('contact') }}">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="clear"></div>
             </nav>
+
         </div>

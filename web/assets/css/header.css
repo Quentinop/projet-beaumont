@@ -1,12 +1,45 @@
 .container{
     width:1170px;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 nav{
-    height: 50px;
-    background-color: aqua;
-    font-size: 15px;
+    height:60px;
+    font-size:15px;
+    line-height: 60px;
+}
+
+.logo-header{
+    width:30%;
+    height: 100%;
+    float:left;
+    text-align:right;
+    padding-top: 10px;
+}
+
+.logo-header img{
+    height: 40px;
+}
+
+.menu-header{
+    width:70%;
+    float:left;
+}
+
+.menu-header ul{
+    display:inline-block;
+    float:right;
+}
+
+.menu-header li{
+    display:inline;
+}
+
+.menu-header a{
+    font-size:18px;
+    text-decoration:none;
+    color:#6c767e;
+    padding:0px 30px;
 }
 
 
