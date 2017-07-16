@@ -13,7 +13,6 @@ nav{
     width:30%;
     height: 100%;
     float:left;
-    text-align:right;
     padding-top: 10px;
 }
 
@@ -28,7 +27,6 @@ nav{
 
 .menu-header ul{
     display:inline-block;
-    float:right;
 }
 
 .menu-header li{
