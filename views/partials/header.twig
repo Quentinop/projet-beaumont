@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-        <title>Usine Beaumont - Migennes</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>Usine Beaumont - Migennes</title>
 
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/reset.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/main.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/header.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/footer.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/home.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/docs.css">
-        <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/plan.css">
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/reset.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/main.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/header.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/footer.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/home.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/docs.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/plan.css">
+</head>
 
-    <body>
+<body>
 
-        <section>
-            <div class="container">
-                <nav>
+    <header>
+        <div class="container">
+            <nav>
 
-                    <div class="logo-header">
-                        <img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png">
-                    </div>
+                <div class="menu-header">
+                    <ul>
+                        <li><a {% if page == 'home' %} class="active" {% endif %} href="{{ url('home') }}">Accueil</a></li>
+                        <li><a {% if page == 'products' %} class="active" {% endif %} href="{{ url('produits') }}">Produits</a></li>
+                        <li><a {% if page == 'plan' %} class="active" {% endif %} href="{{ url('plan') }}">Plan d'accès</a></li>
+                        <li><a {% if page == 'docs' %} class="active" {% endif %} href="{{ url('docs') }}">Documents utiles</a></li>
+                        <li><a {% if page == 'contact' %} class="active" {% endif %} href="{{ url('contact') }}">Contact</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
 
-                    <div class="menu-header">
-                        <ul>
-                            <li><a href="{{ url('home') }}">Accueil</a></li>
-                            <li><a href="{{ url('produits') }}">Produits</a></li>
-                            <li><a href="{{ url('plan') }}">Plan d'accès</a></li>
-                            <li><a href="{{ url('docs') }}">Documents utiles</a></li>
-                            <li><a href="{{ url('contact') }}">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="clear"></div>
-        </section>
+                <div class="logo-header">
+                    <img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png">
+                </div>
+
+            </nav>
+        </div>
+    </header>

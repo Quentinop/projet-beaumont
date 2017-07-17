@@ -4,12 +4,42 @@
 	<h1>Plan d'accèss à l'usine Beaumont</h1>
 </div>
 
-<iframe
-  width="100%"
-  height="600"
-  frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeY1vxcHIf-8Xzf5OJMXNZXLrhJs2g-io	
-    &q=Beaumont+Ets+Sa,migennes&zoom=16" allowfullscreen>
+<div class="plan-map-container">
+	
+	<iframe
+	class="plan-map"
+	width="100%"
+	height="600"
+	frameborder="0" style="border:0"
+	src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBeY1vxcHIf-8Xzf5OJMXNZXLrhJs2g-io	
+	&q=Beaumont+Ets+Sa,migennes&zoom=16" allowfullscreen>
 </iframe>
+<div class="plan-card">
+	<div class="plan-card-top">
+		<div class="plan-card-content">
+			<div class="plan-card-img plan-card-img-top">
+				<img src="{{global.request.basepath}}/assets/img/mail.png" alt="">
+			</div>
+			<div class="plan-card-text plan-card-text-top">	
+				<span>contact.beaumont@orange.fr</span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="plan-card-bot">
+		<div class="plan-card-content">
+			<div class="plan-card-img">
+				<img src="{{global.request.basepath}}/assets/img/pin.png" alt="">
+			</div>
+			<div class="plan-card-text">	
+				<span>3 rue Georges Clemenceau<br>
+				89400 <strong>MIGENNES</strong></span>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+</div>
 
 {{ include('partials/footer.twig') }}
