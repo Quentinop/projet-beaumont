@@ -15,35 +15,35 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 // Home
 $app->get('/', function() use ($app)
 {
-	return $app['twig']->render('pages/home.twig');
+	return $app['twig']->render('pages/home.twig', array("page" => "home"));
 })
 ->bind('home');
 
 // Produits
 $app->get('/produits', function() use ($app)
 {
-	return $app['twig']->render('pages/produits.twig');
+	return $app['twig']->render('pages/produits.twig', array("page" => "products"));
 })
 ->bind('produits');
 
 // Plan
 $app->get('/plan', function() use ($app)
 {
-	return $app['twig']->render('pages/plan.twig');
+	return $app['twig']->render('pages/plan.twig', array("page" => "plan"));
 })
 ->bind('plan');
 
 // Docs
 $app->get('/documents-utiles', function() use ($app)
 {
-	return $app['twig']->render('pages/docs.twig');
+	return $app['twig']->render('pages/docs.twig', array("page" => "docs"));
 })
 ->bind('docs');
 
 // Contact
 $app->get('/contact', function() use ($app)
 {
-	return $app['twig']->render('pages/contact.twig');
+	return $app['twig']->render('pages/contact.twig', array("page" => "contact"));
 })
 ->bind('contact');
 

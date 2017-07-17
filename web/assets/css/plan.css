@@ -1,4 +1,77 @@
 .plan-title 
 {
 	text-align: center;
+	margin-bottom: 40px;
+}
+
+.plan-map-container
+{
+	position: relative;
+}
+
+.plan-card
+{
+	position: absolute;
+	z-index: 10;
+	width: 450px;
+	height: 240px;
+	background-color: #2E3689;
+	top: 50%;
+	left: 15%;
+	transform: translateY(-50%);
+}
+
+.plan-card-top
+{
+	position: relative;
+	color: #fefefe;
+	margin: 0 auto;
+	height: 50%;
+	width: 85%;
+	border-bottom: 1px solid #fff;
+}
+
+.plan-card-bot
+{
+	position: relative;
+	color: #fefefe;
+	margin: 0 auto;
+	height: 50%;
+	width: 85%;
+}
+
+.plan-card-content
+{
+	font-size: 22px;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+.plan-card-img
+{
+
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.plan-card-text
+{
+	height: 100%;
+	width: 80%;
+	float: left;
+}
+
+.plan-card-text-top
+{
+	height: 100%;
+	line-height: 120px;
+}
+
+.plan-card-img-top
+{
+	height: 100%;
+	padding-top: 30px;
 }
