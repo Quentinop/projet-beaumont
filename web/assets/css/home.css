@@ -1,12 +1,11 @@
 .slider-home{
     position:relative;
-    height:190px;
+    height:210px;
     overflow:hidden;
 }
 
 .slider-home img{
     position:absolute;
-    height:190px;
 }
 
 .ecrou{
