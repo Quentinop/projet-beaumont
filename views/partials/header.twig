@@ -24,7 +24,13 @@
                 <div class="menu-header">
                     <ul>
                         <li><a {% if page == 'home' %} class="active" {% endif %} href="{{ url('home') }}">Accueil</a></li>
-                        <li><a {% if page == 'products' %} class="active" {% endif %} href="{{ url('produits') }}">Produits</a></li>
+                        <li><a {% if page == 'product' %} class="active" {% endif %}>Produits
+                            <ul>
+                                <li><a href="{{ url('product-ext') }}">Extincteur</a></li>
+                                <li><a href="{{ url('product-des') }}">Désenfumage</a></li>
+                                <li><a href="{{ url('product-oth') }}">Autres</a></li>
+                            </ul>
+                       </a></li>
                         <li><a {% if page == 'plan' %} class="active" {% endif %} href="{{ url('plan') }}">Plan d'accès</a></li>
                         <li><a {% if page == 'docs' %} class="active" {% endif %} href="{{ url('docs') }}">Documents utiles</a></li>
                         <li><a {% if page == 'contact' %} class="active" {% endif %} href="{{ url('contact') }}">Contact</a></li>

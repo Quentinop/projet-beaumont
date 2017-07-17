@@ -19,12 +19,23 @@ $app->get('/', function() use ($app)
 })
 ->bind('home');
 
-// Produits
-$app->get('/produits', function() use ($app)
+$app->get('/produits/extincteurs', function() use ($app)
 {
-	return $app['twig']->render('pages/produits.twig', array("page" => "products"));
+	return $app['twig']->render('pages/product-ext.twig', array("page" => "product"));
 })
-->bind('produits');
+->bind('product-ext');
+
+$app->get('/produits/desenfumage', function() use ($app)
+{
+	return $app['twig']->render('pages/product-des.twig', array("page" => "product"));
+})
+->bind('product-des');
+
+$app->get('/produits/autres', function() use ($app)
+{
+	return $app['twig']->render('pages/product-oth.twig', array("page" => "product"));
+})
+->bind('product-oth');
 
 // Plan
 $app->get('/plan', function() use ($app)
