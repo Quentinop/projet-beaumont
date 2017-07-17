@@ -1,5 +1,76 @@
-.title-home{
-    text-align:center;
-    padding:15px 0px;
+.slider-home{
+    position:relative;
+    height:190px;
+    overflow:hidden;
 }
 
+.slider-home img{
+    position:absolute;
+    height:190px;
+}
+
+.ecrou{
+    opacity:1;
+    animation:slide 2s ease-in-out 2s;
+}
+
+.exctincteur{
+    opacity:1;
+    animation:slide 2s ease-in-out 4s;
+}
+
+.desenfumage{
+    opacity:1;
+    animation:slide 2s ease-in-out 8s;
+}
+
+@keyframes slide{
+
+    0%{
+        opacity:1;
+    }
+
+    100%{
+        opacity:0;
+    }
+}
+
+.img-beaumont-home{
+    width:50%;
+    height:410px;
+    float:left;
+    background-color:#2e3689;
+}
+
+.presentation-beaumont{
+    width:50%;
+    height:410px;
+    float:left;
+    position:relative;
+}
+
+.presentation-beaumont h1{
+    color:#2e3689;
+    font-size:28px;
+    font-weight:bold;
+    margin:65px 0px 0px 30px;
+}
+
+.presentation-beaumont div{
+    background-color:#f5f5f5;
+    position:absolute;
+    width:120%;
+    height:200px;
+    right:0%;
+    top:30%;
+}
+
+.presentation-beaumont p{
+    font-size:16px;
+    text-align:center;
+    color:#2e3689;
+}
+
+.presentation-bold{
+    font-size:17px;
+}

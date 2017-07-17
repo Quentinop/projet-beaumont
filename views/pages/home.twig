@@ -1,15 +1,32 @@
 {{ include('partials/header.twig') }}
 
-<div class="container">
-
-<div class="title-home">
-<h1>Société Beaumont</h1>
-</div>
-
 <div class="slider-home">
-</div>
+
+    <img class="exctincteur" src="{{ global.request.basepath }}/assets/img/banniere-extincteur.png">
+    <img class="desenfumage" src="{{ global.request.basepath }}/assets/img/banniere-desenfumage.png">
+    <img class="ecrou" src="{{ global.request.basepath }}/assets/img/banniere-ecrou.png">
 
 </div>
-<img src="{{ global.request.basepath }}/assets/img/bannière-écrou.png">
+
+<div class="img-beaumont-home">
+
+</div>
+
+<div class="container">
+    <div class="presentation-beaumont">
+
+        <h1>Découvrir la société Beaumont</h1>
+        <div>
+            <p>
+                <strong class="presentation-bold">Fabriquant français depuis 1957, les établissements Beaumont sont spécialistes dans la réalisations de sparklets, cartouches, bouteilles et autre conteneurs de gaz très haute pression.</strong><br><br>
+                Nos produits conçus à MIGENNES (89) sont principalement utilisés dans les domaines de la lutte contre l’incendie, le désenfumage et l’aéronautique.
+                Nous avons acquis la confiance de nombreux partenaires internationaux grâce à notre compétitivité et notre réactivité indipensable aux besoins des marchés actuels.
+            </p>
+        </div>
+
+    </div>
+</div>
+
+<div class="clear"></div>
 
 {{ include('partials/footer.twig') }}
