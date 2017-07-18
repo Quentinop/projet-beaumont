@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/home.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/docs.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/plan.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/ext.css">
 </head>
 
 <body>
@@ -24,13 +25,13 @@
                 <div class="menu-header">
                     <ul>
                         <li><a {% if page == 'home' %} class="active" {% endif %} href="{{ url('home') }}">Accueil</a></li>
-                        <li><a {% if page == 'product' %} class="active" {% endif %}>Produits
+                        <li><a {% if page == 'product' %} class="active" {% endif %}>Produits</a>
                             <ul>
                                 <li><a href="{{ url('product-ext') }}">Extincteur</a></li>
                                 <li><a href="{{ url('product-des') }}">Désenfumage</a></li>
                                 <li><a href="{{ url('product-oth') }}">Autres</a></li>
                             </ul>
-                       </a></li>
+                       </li>
                         <li><a {% if page == 'plan' %} class="active" {% endif %} href="{{ url('plan') }}">Plan d'accès</a></li>
                         <li><a {% if page == 'docs' %} class="active" {% endif %} href="{{ url('docs') }}">Documents utiles</a></li>
                         <li><a {% if page == 'contact' %} class="active" {% endif %} href="{{ url('contact') }}">Contact</a></li>
