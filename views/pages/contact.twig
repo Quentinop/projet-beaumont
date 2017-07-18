@@ -1,5 +1,42 @@
 {{ include('partials/header.twig') }}
 
-<h1>Beaumont</h1>
+<h1 class="title-class">Nous conctacter ...</h1>
+
+<div class="back-contact">
+    <div class="form">
+        <div class="form-contact">
+            {{ form_start(contact_form) }}
+
+            <div class="form-1">
+                <label> Société </label>
+                <div>{{ form_widget(contact_form.entreprise) }}</div>
+
+                <label> Email </label>
+                <div>{{ form_widget(contact_form.email) }}</div>
+            </div>
+
+            <div class="form-1" >
+                <label> Nom / Prenom </label>
+                <div>{{ form_widget(contact_form.name) }}</div>
+
+
+                <label> Téléphone </label>
+                <div>{{ form_widget(contact_form.tel) }}</div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="form-2">
+                <label> Commentaire </label>
+                <div>{{ form_widget(contact_form.body) }}</div>
+            </div>
+        </div>
+
+        <div class="button-form">
+            {{ form_widget(contact_form.submit) }}
+        </div>
+        {{ form_end(contact_form) }}
+    </div>
+
+</div>
 
 {{ include('partials/footer.twig') }}
