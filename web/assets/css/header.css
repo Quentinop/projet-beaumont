@@ -63,6 +63,11 @@ nav{
     transition: all .2s ease-in;
 }
 
+.menu-header > ul > li > a:hover{
+    color:#2e3689;
+    transition: all 0.2s ease 0s;
+}
+
 .menu-header > ul > li > a:hover:after{
     transform: translateX(-50%) scaleX(1);
     transform-origin: 0 0;
@@ -98,6 +103,11 @@ nav{
     display: inline-block;
     width: 100%;
     position: relative;
+    color:#6c767e;
+}
+
+.menu-header > ul > li > ul > li > a:hover{
+    color:#2e3689;
 }
 
 .menu-header > ul > li > ul > li > a:after{

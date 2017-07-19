@@ -3,6 +3,7 @@
 {
     width: 55%;
     margin: 0 auto;
+    margin-top:50px;
 }
 
 .docs-card
@@ -31,6 +32,26 @@
 
 .docs-card-bot-line img{
     width:22px;
+    float:right;
+}
+
+.center-img-1{
+    margin-top:17px;
+}
+
+.center-img-2{
+    margin-top:23.5px;
+}
+
+.docs-card-bot-line span{
+    float:left;
+    color:#2e3689;
+    padding-left:5px;
+}
+
+.docs-card-bot-line span:hover{
+    color:red;
+    transition: all 0.3s ease 0s;
 }
 
 .docs-card-bot
@@ -45,7 +66,7 @@
 {
     width: 95%;
     margin: 0 auto;
-    padding:15px 0px 10px 0px;
+    line-height:60px;
     border-bottom: 1px solid #eee;
     height: 60px;
 }
