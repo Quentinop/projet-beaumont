@@ -2,9 +2,34 @@
 
 <div class="slider-home">
 
-    <img class="exctincteur" src="{{ global.request.basepath }}/assets/img/banniere-extincteur.png">
-    <img class="desenfumage" src="{{ global.request.basepath }}/assets/img/banniere-desenfumage.png">
     <img class="ecrou" src="{{ global.request.basepath }}/assets/img/banniere-ecrou.png">
+    <img class="desenfumage" src="{{ global.request.basepath }}/assets/img/banniere-desenfumage.png">
+    <img class="exctincteur" src="{{ global.request.basepath }}/assets/img/banniere-extincteur.png">
+
+    <div class="slider-info">
+        <div class="info-text">
+            <p><strong>AUTRES PRODUITS</strong></p>
+        </div>
+        <a href="{{ url('product-oth')}}">DÉCOUVRIR</a>
+    </div>
+    <div class="slider-info">
+        <div class="info-text">
+            <p><strong>DÉSENFUMAGE</strong></p>
+        </div>
+        <a href="{{ url('product-des')}}">DÉCOUVRIR</a>
+    </div>
+    <div class="slider-info">
+        <div class="info-text">
+            <p><strong>BOUTEILLES EXTINCTEURS</strong></p>
+        </div>
+        <a href="{{ url('product-ext')}}">DÉCOUVRIR</a>
+    </div>
+
+    <div class="slider-controls">
+        <div id="0" class="home-slider-item"></div>
+        <div id="1" class="home-slider-item"></div>
+        <div id="2" class="home-slider-item"></div>
+    </div>
 
 </div>
 
