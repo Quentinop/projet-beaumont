@@ -9,7 +9,7 @@ var j = 0
 
 home_slider_controls[j].style.backgroundColor = '#2e3689'
 
-var home_interval = setInterval(homeSlide, 2000)
+var home_interval = setInterval(homeSlide, 4000)
 
 function homeSlide()
 {
@@ -39,7 +39,7 @@ for(var k = 0; k < home_slider_controls.length; k++)
 {
 	home_slider_controls[k].addEventListener('click', function(e){
 		clearInterval(home_interval);
-		home_interval = setInterval(homeSlide, 2000)
+		home_interval = setInterval(homeSlide, 4000)
 		resetHomeControls()
 		j = e.target.id
 		home_slider_controls[j].style.backgroundColor = '#2e3689'
@@ -132,7 +132,7 @@ if(slider_img.length != 0)
 	})
 	right.addEventListener('click', function(e) {
 		clearInterval(interval);
-		interval = setInterval(slide, 5000)
+		interval = setInterval(slide, 7000)
 		if(i == 0)
 		{
 			i = slider_img.length - 1
