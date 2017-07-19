@@ -6,32 +6,80 @@
 
 .slider-home img{
     position:absolute;
+    transition: .5s all ease-in;
 }
 
-.ecrou{
-    opacity:1;
-    animation:slide 2s ease-in-out 2s;
+.slider-info{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    text-align: center;
+    transition: .5s all ease-in;
 }
 
-.exctincteur{
-    opacity:1;
-    animation:slide 2s ease-in-out 4s;
+.slider-info a{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: white;
+    border: 2px solid #2e3689;
+    text-align: center;
+    color: #2e3689;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s all ease-out;
 }
 
-.desenfumage{
-    opacity:1;
-    animation:slide 2s ease-in-out 8s;
+.slider-info a:hover{
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #2e3689;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-@keyframes slide{
+.info-text{
+    color: #fefefe;
+    height: 110px;
+    width: 180px;
+    margin-bottom: 10px;
+    background-color:#2e3689 ;
+    position: relative;
+}
 
-    0%{
-        opacity:1;
-    }
+.info-text p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 140%;
+    font-size: 22px;
+}
 
-    100%{
-        opacity:0;
-    }
+.slider-controls{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-slider-item{
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border: 1px solid #333;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .img-beaumont-home{
