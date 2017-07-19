@@ -4,7 +4,7 @@ if(slider_img.length != 0)
 {
 	var i = slider_img.length - 1
 
-	var interval = setInterval(slide, 3000)
+	var interval = setInterval(slide, 7000)
 
 	function slide()
 	{
@@ -26,7 +26,7 @@ if(slider_img.length != 0)
 
 	left.addEventListener('click', function(e) {
 		clearInterval(interval);
-		interval = setInterval(slide, 3000)
+		interval = setInterval(slide, 5000)
 		if(i == slider_img.length - 1)
 		{
 			clearSlides()
@@ -41,7 +41,7 @@ if(slider_img.length != 0)
 	})
 	right.addEventListener('click', function(e) {
 		clearInterval(interval);
-		interval = setInterval(slide, 3000)
+		interval = setInterval(slide, 5000)
 		if(i == 0)
 		{
 			i = slider_img.length - 1
