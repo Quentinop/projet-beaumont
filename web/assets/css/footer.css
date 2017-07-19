@@ -6,8 +6,32 @@
 }
 
 .footer .item-footer{
+    height:100%;
     width:25%;
     float:left;
     text-align:center;
+    position:relative;
 }
 
+.item-footer:not(:last-child):after{
+    content:"";
+    position:absolute;
+    right:0%;
+    top:50%;
+    height:40px;
+    width:1px;
+    background-color:#fefefe;
+    transform:translateY(-50%);
+}
+
+.item-footer a{
+    display:block;
+    width:100%;
+    padding-bottom:3px;
+}
+
+.title-footer{
+    font-weight:bold;
+    font-size:17px;
+    padding:26px;
+}
