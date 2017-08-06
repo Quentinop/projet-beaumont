@@ -9,7 +9,7 @@
 
 .form-contact{
     position:absolute;
-    top:4%;
+    top:10%;
     left:50%;
     transform:translateX(-50%);
     width:40%;
@@ -46,7 +46,7 @@ form{
 }
 
 .form-1 input:focus{
-   border: 1px solid red;
+ border: 1px solid red;
 }
 
 .inputs{
@@ -96,23 +96,75 @@ form{
     margin-bottom:7px;
 }
 
-
 .button-form{
     background-color:#2e3689;
     width:15%;
     height:50px;
     text-align:center;
     position:absolute;
-    top:77%;
+    top:85%;
     left:50%;
     transform:translateX(-50%);
-    transition: all 0.5s ease 0s;
+    transition: all 0.3s ease 0s;
     padding:15px 0px;
     color:#fefefe;
+    cursor: pointer;
 }
 
 .button-form:hover{
     border:1px #2e3689 solid;
     background-color:#fefefe;
     color:#2e3689;
+}
+
+
+@media (max-width: 1200px) 
+{
+
+}
+
+@media (max-width: 992px) 
+{
+
+}
+
+@media (max-width: 768px) 
+{
+    .form-contact{
+        width: 80%;
+        height: 70%;    
+    }
+}
+
+@media (max-width: 320px) 
+{
+    .form-contact{
+        top: 2%;    
+        width: 95%; 
+        height: 85%;  
+        padding: 20px 20px;     
+    }
+    form{
+        margin: 15px 15px;
+    }
+    .form-1{
+        width:100%;
+        height:170px;
+        color:#2e3689;
+        float:left;
+    }
+    .form-right .right-input{
+        float:left;
+    }
+    .form-right label{
+        float:left;
+    }
+    .form-1 .inputs
+    {
+        width: 100%;    
+    }
+    .button-form{
+        width:95%;
+        top: 90%;   
+    }
 }

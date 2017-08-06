@@ -8,6 +8,7 @@ html
     font-family: 'Raleway', sans-serif;
 }
 
+
 .container{
     width:1170px;
     height: 100%;
@@ -28,4 +29,26 @@ strong
     font-weight:bold;
 }
 
+@media (max-width: 1200px) 
+{
+    .container
+    {
+        width: 970px;
+    }
+}
 
+@media (max-width: 992px) 
+{
+    .container
+    {
+        width: 750px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .container
+    {
+        width: 100%;
+    }
+}

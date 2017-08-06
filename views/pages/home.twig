@@ -36,25 +36,56 @@
 <div class="img-beaumont-home">
     <img src="{{ global.request.basepath }}/assets/img/beaumont.png">
 </div>
+<div class="grey-container">    
+    <div class="container">
 
-<div class="container">
-    <div class="presentation-beaumont">
-        <h1>Découvrir la société Beaumont</h1>
-        <div>
-            <p>
-                <strong class="presentation-bold">Fabriquant français depuis 1957, les établissements Beaumont<br> sont spécialistes dans la réalisations de sparklets, cartouches,<br> bouteilles et autre conteneurs de gaz très haute pression.</strong><br><br>
-                Nos produits conçus à MIGENNES (89) sont principalement utilisés dans les domaines de la lutte contre l’incendie, le désenfumage et l’aéronautique.
-                <br>Nous avons acquis la confiance de nombreux partenaires internationaux grâce à notre compétitivité et notre réactivité indipensable aux besoins des marchés actuels.
-            </p>
+        <div class="presentation-beaumont">
+            <div>
+                <h1>Découvrir la société Beaumont</h1>
+                <p>
+                    <strong class="presentation-bold">Fabriquant français depuis 1957, les établissements Beaumont sont spécialistes dans la réalisations de sparklets, cartouches,bouteilles et autre conteneurs de gaz très haute pression.</strong><br><br>
+                    Nos produits conçus à MIGENNES (89) sont principalement utilisés dans les domaines de la lutte contre l’incendie, le désenfumage et l’aéronautique.
+                    Nous avons acquis la confiance de nombreux partenaires internationaux grâce à notre compétitivité et notre réactivité indipensable aux besoins des marchés actuels.
+                </p>
+                <a class="home-discover-btn" href="{{ url('product-ext') }}">Découvrir nos produits</a>
+            </div>
         </div>
 
-        <span class="decouvrir-beaumont">
-            <a {% if page == 'products' %} class="active" {% endif %} href="{{ url('product-ext') }}">Découvrir nos produits</a>
-        </span>
-        
     </div>
 </div>
 
 <div class="clear"></div>
+
+<div class="plan-slider">
+    <div class="plan-slider-container">
+        <img src="{{global.request.basepath}}/assets/img/Slider01.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider02.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider03.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider04.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider05.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider06.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider07.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider08.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider09.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider10.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider11.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider12.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider13.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider14.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider15.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider16.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider17.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider18.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider19.jpg" alt="">
+        <img src="{{global.request.basepath}}/assets/img/Slider20.jpg" alt="">
+    </div>
+
+    <div class="plan-slider-controls">  
+        <div class="container"> 
+            <img src="{{global.request.basepath}}/assets/img/arrow02.png" alt="">
+            <img src="{{global.request.basepath}}/assets/img/arrow01.png" alt="">
+        </div>
+    </div>
+</div>
 
 {{ include('partials/footer.twig') }}

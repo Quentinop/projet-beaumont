@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Usine Beaumont - Migennes</title>
-
+    <link rel="icon" href="{{ global.request.basepath }}/assets/img/favicon.jpg"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/reset.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/main.css">
@@ -13,10 +13,7 @@
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/home.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/docs.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/plan.css">
-    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/ext.css">
-    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/des.css">
-    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/des.css">
-    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/other.css">
+    <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/products.css">
     <link rel="stylesheet" href="{{ global.request.basepath }}/assets/css/contact.css">
 </head>
 
@@ -29,11 +26,11 @@
                 <div class="menu-header">
                     <ul>
                         <li><a {% if page == 'home' %} class="active" {% endif %} href="{{ url('home') }}">Accueil</a></li>
-                        <li><a {% if page == 'product' %} class="active" {% endif %}>Produits</a>
+                        <li><a {% if page == 'product' %} class="active" {% endif %}>Bouteilles</a>
                             <ul>
                                 <li><a href="{{ url('product-ext') }}">Extincteur</a></li>
                                 <li><a href="{{ url('product-des') }}">Désenfumage</a></li>
-                                <li><a href="{{ url('product-oth') }}">Autres</a></li>
+                                <li><a href="{{ url('product-oth') }}">Autres produits</a></li>
                             </ul>
                        </li>
                         <li><a {% if page == 'plan' %} class="active" {% endif %} href="{{ url('plan') }}">Plan d'accès</a></li>
@@ -41,10 +38,15 @@
                         <li><a {% if page == 'contact' %} class="active" {% endif %} href="{{ url('contact') }}">Contact</a></li>
                     </ul>
                     <div class="clear"></div>
+                    <div class="burger-overlay"></div>
                 </div>
 
                 <div class="logo-header">
                     <a href="{{ url('home') }}"><img src="{{ global.request.basepath }}/assets/img/logo-beaumont.png"></a>
+                </div>
+
+                <div class="burger-header">
+                    <img src="{{ global.request.basepath }}/assets/img/burger-header.png" alt="">
                 </div>
 
             </nav>

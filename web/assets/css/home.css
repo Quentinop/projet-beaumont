@@ -6,6 +6,7 @@
 
 .slider-home img{
     position:absolute;
+    height: 100%;
     transition: .5s all ease-in;
 }
 
@@ -88,9 +89,11 @@
     float:left;
     background-color:#2e3689;
     overflow:hidden;
+    margin-bottom: -4px;
 }
 
 .img-beaumont-home img{
+    margin-top: -2px;
     width:100%;
 }
 
@@ -102,34 +105,37 @@
 }
 
 .presentation-beaumont h1{
+    position: absolute;
+    top: -120px;
+    left: 110px;
     color:#2e3689;
     font-size:28px;
     font-weight:bold;
     margin:65px 0px 0px 30px;
 }
 
-.decouvrir-beaumont{
-    position:absolute;
-    top:71%;
-    left:17%;
-    padding:15px 20px;
-    background-color:#2e3689;
-    color:white;
-    transition: all 0.5s ease 0s;
+.home-discover-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: inline-block;
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #2e3689;
+    border: 2px solid white;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s all ease-out;
 }
 
-.decouvrir-beaumont a{
-    text-decoration:none;
-    text-transform:uppercase;
-    font-size:15px;
-    font-weight:bold;
-    flex:1 1 auto;
-}
-
-.decouvrir-beaumont:hover{
-    border:1px #2e3689 solid;
-    background-color:#fefefe;
-    color:#2e3689;
+.home-discover-btn:hover{
+    background-color: white;
+    border: 2px solid #2e3689;
+    color: #2e3689;
 }
 
 .presentation-beaumont div{
@@ -151,4 +157,202 @@
 
 .presentation-bold{
     font-size:18px;
+}
+
+
+.plan-slider
+{
+    position: relative;
+    height: 200px;  
+    overflow: hidden;
+    margin-bottom: -4px;
+}
+
+.plan-slider-container
+{
+    position: absolute;
+    left: -400px;
+    height: 200px;
+    width: 3965px;
+    transition: 0.5s all ease-in;
+    will-change: left;
+}
+
+.plan-slider-container img
+{
+    float: left;
+    height: 200px;
+}
+
+.plan-slider-controls
+{
+    position: absolute; 
+    top: 50%;   
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.plan-slider-controls div img
+{
+    cursor: pointer;
+    height: 64px;   
+}
+
+.plan-slider-controls div img:first-child
+{
+    float: left;    
+}
+
+.plan-slider-controls div img:last-child
+{
+    float: right;   
+}
+
+
+
+@media (max-width: 1420px) 
+{
+    .img-beaumont-home img
+    {
+        height: 102%;
+        width: auto;
+    }
+}
+
+@media (max-width: 1200px) 
+{
+    .presentation-beaumont div
+    {
+        height: 300px;
+    } 
+    .presentation-beaumont h1
+    {
+        left: 80px;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .presentation-beaumont div
+    {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px 20px;
+    }
+    .presentation-beaumont h1
+    {
+        position: static;
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .grey-container
+    {
+        height: 550px;
+        background-color: #f5f5f5;
+    }
+    .home-discover-btn
+    {
+        bottom: 12%;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .img-beaumont-home
+    {
+        float: none;
+        width: 100%;
+        height: 400px;               
+    }
+    .img-beaumont-home img
+    {
+        width: 100%;
+        height: auto;
+    }
+    .presentation-beaumont
+    {
+        float: none;
+        width: 100%;  
+        height: 350px;     
+    }
+    .presentation-beaumont div
+    {
+        padding: 40px 70px;     
+    }
+    .grey-container
+    {
+        height: 350px;
+        background-color: #f5f5f5;
+    }
+}
+
+@media (max-width: 710px) 
+{
+    .img-beaumont-home img
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 540px) 
+{
+    .presentation-beaumont
+    {  
+        height: 600px;     
+    }
+    .presentation-beaumont div
+    {
+        padding: 40px 20px;     
+    }
+    .grey-container
+    {
+        height: 600px;
+    }
+}
+
+@media (max-width: 320px) 
+{
+    .img-beaumont-home
+    {
+        float: none;
+        width: 100%;
+        height: 200px;               
+    }
+    .img-beaumont-home img
+    {
+        width: 100%;             
+        height: auto;
+    }
+    .presentation-beaumont
+    {
+        height: 600px;   
+    } 
+    .grey-container
+    {
+        height: 600px;
+    }
+    .presentation-beaumont div
+    {
+        padding: 40px 20px;     
+    }
+    .presentation-beaumont h1
+    {
+        font-size: 24px;   
+    }
+    .presentation-beaumont h1
+    {
+        font-size: 24px;   
+    }
+    .presentation-beaumont p
+    {
+        font-size: 14px;   
+    }
+    .plan-slider-controls div img
+    {
+        height: 38px;
+        margin: 0 20px;
+    }
 }

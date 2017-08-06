@@ -1,4 +1,7 @@
-
+.docs-container
+{
+    height: 750px;
+}
 .docs-cards
 {
     width: 55%;
@@ -12,6 +15,11 @@
     text-align: center;
     padding: 20px 0px;
     margin-bottom:50px;
+}
+
+.docs-title
+{
+    padding: 30px 0;
 }
 
 .docs-card:nth-child(0)
@@ -58,4 +66,44 @@
 
 .docs-card-top img{
     margin-bottom:20px;
+}
+
+@media (max-width: 1200px) 
+{
+    .docs-cards
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width: 992px) 
+{
+    .docs-cards
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .docs-cards
+    {
+        width: 100%;
+    }
+    .docs-card
+    {
+        margin: 20px auto;  
+    }
+    .docs-card:nth-child(1)
+    {  
+        float: none;
+    }
+    .docs-card:nth-child(0)
+    {   
+        float: none;
+    }
+    .docs-container
+    {
+        height: auto;
+    }
 }

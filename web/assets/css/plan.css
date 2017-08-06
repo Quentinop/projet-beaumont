@@ -1,6 +1,15 @@
 .plan-map-container
 {
 	position: relative;
+	margin-bottom: -4px;
+}
+
+.map-overlay
+{
+	position: absolute;	
+	background: transparent;
+	height: 700px;	
+	width: 100%;
 }
 
 .plan-card
@@ -11,7 +20,7 @@
 	height: 240px;
 	background-color: #2E3689;
 	top: 50%;
-	left: 15%;
+	left: 5%;
 	transform: translateY(-50%);
 }
 
@@ -45,7 +54,6 @@
 
 .plan-card-img
 {
-
 	height: 100%;
 	width: 20%;
 	float: left;
@@ -68,4 +76,72 @@
 {
 	height: 100%;
 	padding-top: 30px;
+}
+
+
+@media (max-width: 1024px) 
+{
+	.plan-card
+	{
+		left: 2%;
+	}
+}
+
+@media (max-width: 768px) 
+{
+	.plan-card
+	{
+		position: absolute;
+		z-index: 10;
+		width: 450px;
+		height: 240px;
+		background-color: #2E3689;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%, -100%);
+	}
+}
+
+@media (max-width: 540px) 
+{
+	.plan-card-content
+	{
+		font-size: 16px;
+	}
+	.plan-card-top
+	{
+		width: 100%;
+		padding: 0 20px;
+	}
+	.plan-card-bot
+	{
+		width: 100%;
+		padding: 0 20px;
+		font-size: 16px;
+	}
+	.plan-card-text
+	{
+		padding-left: 10px;
+	}
+	.plan-card-img img
+	{
+		height: 48px;
+	}
+	.map-overlay
+	{
+		height: 550px;
+	}
+	.plan-map
+	{
+		height: 550px;
+	}
+	.plan-card
+	{
+		width: 100%;
+	}
+}
+
+@media (max-width: 320px) 
+{
+
 }
